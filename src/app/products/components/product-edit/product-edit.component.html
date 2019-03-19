@@ -9,12 +9,12 @@
           <label class="col-md-3 col-form-label" for="productNameId">Product Name</label>
 
           <div class="col-md-9">
-            <input [ngClass]="{'is-invalid': displayMessage.productName }" 
-                   class="form-control" 
-                   id="productNameId" 
-                   type="text" 
-                   placeholder="Name (required)" 
-                   formControlName="productName" 
+            <input [ngClass]="{'is-invalid': displayMessage.productName }"
+                   class="form-control"
+                   id="productNameId"
+                   type="text"
+                   placeholder="Name (required)"
+                   formControlName="productName"
                    (blur)="blur()" />
             <span class="invalid-feedback" *ngIf="displayMessage.productName">
               {{displayMessage.productName}}
@@ -26,7 +26,7 @@
           <label class="col-md-3 col-form-label" for="productCodeId">Product Code</label>
 
           <div class="col-md-9">
-            <input [ngClass]="{'is-invalid': displayMessage.productCode}" 
+            <input [ngClass]="{'is-invalid': displayMessage.productCode}"
                    class="form-control"
                    id="productCodeId"
                    type="text"
@@ -44,10 +44,10 @@
 
           <div class="col-md-9">
             <input [ngClass]="{'is-invalid': displayMessage.starRating}"
-                   class="form-control" 
-                   id="starRatingId" 
-                   type="text" 
-                   placeholder="Rating" 
+                   class="form-control"
+                   id="starRatingId"
+                   type="text"
+                   placeholder="Rating"
                    formControlName="starRating" />
             <span class="invalid-feedback" *ngIf="displayMessage.starRating">
               {{displayMessage.starRating}}
@@ -60,10 +60,10 @@
 
           <div class="col-md-9">
             <textarea [ngClass]="{'is-invalid': displayMessage.description}"
-                      class="form-control" 
-                      id="descriptionId" 
-                      placeholder="Description" 
-                      rows=3 
+                      class="form-control"
+                      id="descriptionId"
+                      placeholder="Description"
+                      rows=3
                       formControlName="description">
             </textarea>
             <span class="invalid-feedback" *ngIf="displayMessage.description">
@@ -85,7 +85,7 @@
               </button>
             </span>
             <span>
-              <button class="btn btn-light" type="button" style="width:80px" (click)="deleteProduct()">
+              <button class="btn btn-light" type="button" style="width:80px" (click)="onDeleteProduct()">
                 Delete
               </button>
             </span>
